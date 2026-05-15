@@ -3,6 +3,18 @@
 # 20-50x FASTER THAN ORIGINAL - NO INDEXING REQUIRED!
 # =========================================================
 
+import os  # REQUIRED for Render
+# ... all your other imports ...
+
+# 🆕 ENVIRONMENT VERSION:
+API_TOKEN = os.getenv("API_TOKEN")
+if not API_TOKEN:
+    print("❌ API_TOKEN missing! Set in Render dashboard.")
+    exit(1)
+
+bot = telebot.TeleBot(API_TOKEN)
+# ... rest of your EXACT code unchanged ...
+
 import os
 import json
 import time
