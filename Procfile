@@ -1,1 +1,1 @@
-web: python TXT GEN V2.py
+web: python bot.py
